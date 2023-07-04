@@ -22,7 +22,14 @@ const Header = () => {
             <img src="src/img/Buy.png" alt="logo2" />
           </StyleHeaderImg2>
         </Parte1>
+        <Parte2>
+          <StyleHeaderButtons >Home</StyleHeaderButtons>
+          <StyleHeaderButtons>Produtos</StyleHeaderButtons>
+          <StyleHeaderButtons>Categoria</StyleHeaderButtons>
+          <StyleHeaderButtons>Meus Pedidos</StyleHeaderButtons>
+        </Parte2>
       </StyleHeaderContainer>
+
     </>
   );
 };
@@ -30,12 +37,21 @@ export const StyleHeaderContainer = styled.div`
   width: 100%;
   height: 192px;
   background-color: #fff;
-  padding-top: 30px;
+  padding-top: 10px;
 `;
 export const Parte1 = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
+  height: 96px;
+`;
+export const Parte2 = styled.div`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 96px;
+  gap: 32px;
+  margin-left: 100px;
 `;
 export const StyleHeaderH1 = styled.h1`
 width: 300px;
@@ -110,6 +126,23 @@ export const StyleHeaderButton2 = styled.button`
   color: #f5f5f5;
   background-color: #c92071;
   border: none;
+`;
+
+export const StyleHeaderButtons= styled.button`
+color: #474747;
+background-color: initial;
+font-size: 16px;
+font-family: Inter;
+font-style: normal;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0.75px;
+text-decoration-line: underline;
+padding-bottom: 30px;
+cursor: pointer;
+&:hover{
+  color: #c92071;
+}
 `;
 
 export default Header;

@@ -140,6 +140,7 @@ letter-spacing: 0.75px;
 text-decoration-line: underline;
 padding-bottom: 30px;
 cursor: pointer;
+transition: 300ms;
 &:hover{
   color: #c92071;
 }
